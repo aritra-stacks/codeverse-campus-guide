@@ -121,5 +121,16 @@
     "details": "Snacks, meals and tea",
     "timing": "8 AM to 6 PM",
     "keywords": ["canteen", "food", "lunch", "tea", "snacks"]
+  },
+  {
+    "id": 12,
+    "name": "Spie Society",
+    "category": "Club",
+    "building": "Student Center",
+    "room": "SC-18",
+    "floor": 1,
+    "details": "Student society for optics and photonics activities, workshops and talks",
+    "timing": "Every Thursday, 4 PM",
+    "keywords": ["spie", "society", "optics", "photonics", "club", "workshop"]
   }
 ]

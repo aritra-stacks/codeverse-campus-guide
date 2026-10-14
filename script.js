@@ -195,7 +195,7 @@ function showResources(list) {
   container.innerHTML = "";
 
   if (list.length === 0) {
-    container.innerHTML = "<p class='empty'>Koi result nahi mila.</p>";
+    container.innerHTML = "<p class='empty'>No Result Found.</p>";
     return;
   }
 
