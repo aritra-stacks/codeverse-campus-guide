@@ -1,0 +1,330 @@
+/* ---------- Page ---------- */
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f4f6fa;
+  color: #333;
+}
+
+h1 {
+  color: #1d3557;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  margin: 0 0 20px;
+  color: #6b7785;
+}
+
+.section-title {
+  color: #1d3557;
+  font-size: 18px;
+  margin: 24px 0 10px;
+}
+
+/* ---------- Search and category buttons ---------- */
+
+#searchBox {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+#categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.cat-btn {
+  padding: 8px 16px;
+  border: 1px solid #457b9d;
+  background: white;
+  color: #457b9d;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cat-btn:hover {
+  background: #e8f1f5;
+}
+
+.cat-btn.active {
+  background: #457b9d;
+  color: white;
+}
+
+/* ---------- Campus map ---------- */
+
+.campus-map {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "a b c"
+    "road road road"
+    "aud sc lib";
+  gap: 10px;
+  background: #dfe9d5;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.building {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 8px;
+  background: white;
+  border: 2px solid #457b9d;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #1d3557;
+  font-size: 14px;
+}
+
+.building:hover {
+  background: #e8f1f5;
+}
+
+.building.selected {
+  background: #457b9d;
+  color: white;
+}
+
+.b-name {
+  font-weight: bold;
+}
+
+.b-count {
+  font-size: 12px;
+}
+
+.road {
+  grid-area: road;
+  background: #9aa5b1;
+  color: white;
+  text-align: center;
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+#mapStatus {
+  margin: 10px 0 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+#mapStatus button {
+  margin-left: 8px;
+  padding: 4px 10px;
+  border: 1px solid #457b9d;
+  background: white;
+  color: #457b9d;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* ---------- Suggestions ---------- */
+
+.recommended {
+  margin-bottom: 24px;
+}
+
+.recommended.hidden {
+  display: none;
+}
+
+.reset-btn {
+  margin-left: 10px;
+  padding: 2px 10px;
+  font-size: 12px;
+  border: 1px solid #999;
+  background: white;
+  color: #555;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* ---------- Cards ---------- */
+
+#results,
+#recommendedList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card h3 {
+  margin: 8px 0;
+}
+
+.card p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.card .date {
+  color: #1d3557;
+  font-weight: bold;
+}
+
+.tag {
+  background: #457b9d;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.empty {
+  color: #777;
+}
+
+/* ---------- Popup ---------- */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-box {
+  position: relative;
+  background: white;
+  padding: 24px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 420px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
+}
+
+.modal-box h2 {
+  margin: 10px 0 14px;
+  color: #1d3557;
+}
+
+.modal-box p {
+  margin: 6px 0;
+  color: #333;
+}
+
+.keywords {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.keyword {
+  background: #e8f1f5;
+  color: #1d3557;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.similar {
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px solid #e3e8ee;
+}
+
+.similar h4 {
+  margin: 0 0 8px;
+  color: #1d3557;
+}
+
+.similar-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  border: 1px solid #cfd8e3;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #1d3557;
+}
+
+.similar-btn:hover {
+  background: #e8f1f5;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  margin-top: 40px;
+  padding: 16px 0;
+  border-top: 1px solid #d5dce6;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7785;
+}
+
+/* ---------- Phone screens ---------- */
+
+@media (max-width: 500px) {
+  body {
+    padding: 14px;
+  }
+
+  .campus-map {
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .building {
+    padding: 12px 4px;
+    font-size: 12px;
+  }
+}

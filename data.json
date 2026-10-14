@@ -1,0 +1,125 @@
+[
+  {
+    "id": 1,
+    "name": "Computer Lab 2",
+    "category": "Laboratory",
+    "building": "Block A",
+    "room": "A-204",
+    "floor": 2,
+    "details": "60 computers with programming software",
+    "timing": "9 AM to 5 PM",
+    "keywords": ["computer", "programming", "lab", "coding"]
+  },
+  {
+    "id": 2,
+    "name": "Physics Lab",
+    "category": "Laboratory",
+    "building": "Block C",
+    "room": "C-105",
+    "floor": 1,
+    "details": "Experiments for first and second year",
+    "timing": "10 AM to 4 PM",
+    "keywords": ["physics", "lab", "experiments"]
+  },
+  {
+    "id": 3,
+    "name": "Dr. Sharma",
+    "category": "Faculty",
+    "building": "Block B",
+    "room": "B-101",
+    "floor": 1,
+    "details": "Professor and head of the department",
+    "department": "Computer Science",
+    "email": "sharma@college.edu",
+    "keywords": ["sharma", "professor", "cs", "faculty"]
+  },
+  {
+    "id": 4,
+    "name": "Prof. Verma",
+    "category": "Faculty",
+    "building": "Block C",
+    "room": "C-210",
+    "floor": 2,
+    "details": "Assistant professor",
+    "department": "Physics",
+    "email": "verma@college.edu",
+    "keywords": ["verma", "professor", "physics", "faculty"]
+  },
+  {
+    "id": 5,
+    "name": "Coding Club",
+    "category": "Club",
+    "building": "Student Center",
+    "room": "SC-12",
+    "floor": 1,
+    "details": "Weekly coding practice and hackathon prep",
+    "timing": "Every Friday, 4 PM",
+    "keywords": ["coding", "club", "programming", "hackathon"]
+  },
+  {
+    "id": 6,
+    "name": "Cultural Society",
+    "category": "Club",
+    "building": "Student Center",
+    "room": "SC-15",
+    "floor": 1,
+    "details": "Dance, music and drama events",
+    "timing": "Every Wednesday, 3 PM",
+    "keywords": ["culture", "dance", "music", "drama", "club"]
+  },
+  {
+    "id": 7,
+    "name": "Tech Fest 2026",
+    "category": "Event",
+    "building": "Main Auditorium",
+    "room": "Auditorium",
+    "floor": 0,
+    "details": "Annual tech festival with competitions",
+    "date": "2026-11-20",
+    "keywords": ["fest", "event", "tech", "competition"]
+  },
+  {
+    "id": 8,
+    "name": "Hackathon 2026",
+    "category": "Event",
+    "building": "Block A",
+    "room": "A-301",
+    "floor": 3,
+    "details": "24-hour coding competition",
+    "date": "2026-10-25",
+    "keywords": ["hackathon", "coding", "event", "competition"]
+  },
+  {
+    "id": 9,
+    "name": "Freshers Party",
+    "category": "Event",
+    "building": "Main Auditorium",
+    "room": "Auditorium",
+    "floor": 0,
+    "details": "Welcome party for first year students",
+    "date": "2026-09-30",
+    "keywords": ["freshers", "party", "event"]
+  },
+  {
+    "id": 10,
+    "name": "Central Library",
+    "category": "Facility",
+    "building": "Library Building",
+    "room": "L-01",
+    "floor": 0,
+    "details": "Books, journals and a silent reading hall",
+    "timing": "8 AM to 8 PM",
+    "keywords": ["library", "books", "study", "reading"]
+  },
+  {
+    "id": 11,
+    "name": "Canteen",
+    "category": "Facility",
+    "building": "Student Center",
+    "room": "SC-01",
+    "floor": 0,
+    "details": "Snacks, meals and tea",
+    "timing": "8 AM to 6 PM",
+    "keywords": ["canteen", "food", "lunch", "tea", "snacks"]
+  }
+]
